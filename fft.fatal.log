@@ -1,0 +1,18 @@
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Aug 31 2017 14:13:00
+gem5 started Aug 31 2017 14:47:53
+gem5 executing on quartet-hwu, pid 15285
+command line: build/ARM/gem5.fast --outdir=m5out/timing configs/example/se.py --cpu-type=TimingSimpleCPU -c /home/vsm2/Downloads/fft -o -m16 -o -p2
+
+Global frequency set at 1000000000000 ticks per second
+**** REAL SIMULATION ****
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   2 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
