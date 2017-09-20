@@ -1,0 +1,186 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 4.3.0+ (root@e3b81c164f6d) (gcc version 6.3.0 20170406 (Ubuntu/Linaro 6.3.0-12ubuntu2) ) #11 SMP PREEMPT Fri Sep 15 17:15:19 UTC 2017
+[    0.000000] CPU: AArch64 Processor [410fc0f0] revision 0
+[    0.000000] Detected PIPT I-cache on CPU0
+[    0.000000] Memory limited to 2048MB
+[    0.000000] cma: Reserved 16 MiB at 0x00000000ff000000
+[    0.000000] On node 0 totalpages: 524288
+[    0.000000]   DMA zone: 8192 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 524288 pages, LIFO batch:31
+[    0.000000] PERCPU: Embedded 15 pages/cpu @ffffffc07efad000 s22872 r8192 d30376 u61440
+[    0.000000] pcpu-alloc: s22872 r8192 d30376 u61440 alloc=15*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 516096
+[    0.000000] Kernel command line: earlyprintk=pl011,0x1c090000 console=ttyAMA0 lpj=19988480 norandmaps rw loglevel=8 mem=2GB root=/dev/sda1
+[    0.000000] log_buf_len individual max cpu contribution: 4096 bytes
+[    0.000000] log_buf_len total cpu_extra contributions: 12288 bytes
+[    0.000000] log_buf_len min size: 16384 bytes
+[    0.000000] log_buf_len: 32768 bytes
+[    0.000000] early log buf free: 15068(91%)
+[    0.000000] PID hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.000000] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes)
+[    0.000000] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.000000] software IO TLB [mem 0xf8a00000-0xfca00000] (64MB) mapped at [ffffffc078a00000-ffffffc07c9fffff]
+[    0.000000] Memory: 1970404K/2097152K available (5281K kernel code, 336K rwdata, 1932K rodata, 228K init, 223K bss, 110364K reserved, 16384K cma-reserved)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vmalloc : 0xffffff8000000000 - 0xffffffbdbfff0000   (   246 GB)
+[    0.000000]     vmemmap : 0xffffffbdc0000000 - 0xffffffbfc0000000   (     8 GB maximum)
+[    0.000000]               0xffffffbdc2000000 - 0xffffffbdc4000000   (    32 MB actual)
+[    0.000000]     fixed   : 0xffffffbffa7fd000 - 0xffffffbffac00000   (  4108 KB)
+[    0.000000]     PCI I/O : 0xffffffbffae00000 - 0xffffffbffbe00000   (    16 MB)
+[    0.000000]     modules : 0xffffffbffc000000 - 0xffffffc000000000   (    64 MB)
+[    0.000000]     memory  : 0xffffffc000000000 - 0xffffffc080000000   (  2048 MB)
+[    0.000000]       .init : 0xffffffc00078d000 - 0xffffffc0007c6000   (   228 KB)
+[    0.000000]       .text : 0xffffffc000080000 - 0xffffffc00078c5e4   (  7218 KB)
+[    0.000000]       .data : 0xffffffc0007d9000 - 0xffffffc00082d118   (   337 KB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	Build-time adjustment of leaf fanout to 64.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=256 to nr_cpu_ids=4.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=64, nr_cpu_ids=4
+[    0.000000] NR_IRQS:64 nr_irqs:64 0
+[    0.000000] Architected cp15 timer(s) running at 25.16MHz (virt).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x5cdd39714, max_idle_ns: 440795202620 ns
+[    0.000000] sched_clock: 56 bits at 25MHz, resolution 39ns, wraps every 4398046511084ns
+[    0.000027] Console: colour dummy device 80x25
+[    0.000029] Calibrating delay loop (skipped) preset value.. 3997.69 BogoMIPS (lpj=19988480)
+[    0.000031] pid_max: default: 32768 minimum: 301
+[    0.000044] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.000046] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.000155] hw perfevents: no hardware support available
+[    0.080007] CPU1: Booted secondary processor
+[    0.080007] Detected PIPT I-cache on CPU1
+[    0.110011] CPU2: Booted secondary processor
+[    0.110012] Detected PIPT I-cache on CPU2
+[    0.140016] CPU3: Booted secondary processor
+[    0.140017] Detected PIPT I-cache on CPU3
+[    0.140027] Brought up 4 CPUs
+[    0.140033] SMP: Total of 4 processors activated.
+[    0.140034] CPU: All CPU(s) started at EL1
+[    0.140118] devtmpfs: initialized
+[    0.140632] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.140761] atomic64_test: passed
+[    0.141299] NET: Registered protocol family 16
+[    0.180290] vdso: 2 pages (1 code @ ffffffc0007e1000, 1 data @ ffffffc0007e0000)
+[    0.180297] hw-breakpoint: found 2 breakpoint and 2 watchpoint registers.
+[    0.180517] DMA: preallocated 256 KiB pool for atomic allocations
+[    0.180520] Serial: AMBA PL011 UART driver
+[    0.180882] 1c090000.uart: ttyAMA0 at MMIO 0x1c090000 (irq = 8, base_baud = 0) is a PL011 rev3
+[    0.180980] console [ttyAMA0] enabled
+[    0.250096] vgaarb: loaded
+[    0.250176] SCSI subsystem initialized
+[    0.250205] libata version 3.00 loaded.
+[    0.250269] usbcore: registered new interface driver usbfs
+[    0.250285] usbcore: registered new interface driver hub
+[    0.250298] usbcore: registered new device driver usb
+[    0.250326] pps_core: LinuxPPS API ver. 1 registered
+[    0.250328] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.250337] PTP clock support registered
+[    0.250530] clocksource: Switched to clocksource arch_sys_counter
+[    0.252548] NET: Registered protocol family 2
+[    0.252644] TCP established hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.252694] TCP bind hash table entries: 16384 (order: 6, 262144 bytes)
+[    0.252758] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.252768] UDP hash table entries: 1024 (order: 3, 32768 bytes)
+[    0.252781] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes)
+[    0.252821] NET: Registered protocol family 1
+[    0.252876] RPC: Registered named UNIX socket transport module.
+[    0.252878] RPC: Registered udp transport module.
+[    0.252880] RPC: Registered tcp transport module.
+[    0.252882] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.252885] PCI: CLS 0 bytes, default 64
+[    0.252976] kvm [1]: HYP mode not available
+[    0.253179] futex hash table entries: 1024 (order: 4, 65536 bytes)
+[    0.253281] HugeTLB registered 2 MB page size, pre-allocated 0 pages
+[    0.256283] fuse init (API version 7.23)
+[    0.256517] io scheduler noop registered
+[    0.256559] io scheduler cfq registered (default)
+[    0.256617] PCI host bridge /pci ranges:
+[    0.256619]   No bus range found for /pci, using [bus 00-ff]
+[    0.256623]    IO 0x2f000000..0x2f00ffff -> 0x00000000
+[    0.256627]   MEM 0x40000000..0x7fffffff -> 0x40000000
+[    0.257300] pci-host-generic 30000000.pci: PCI host bridge to bus 0000:00
+[    0.257303] pci_bus 0000:00: root bus resource [bus 00-ff]
+[    0.257306] pci_bus 0000:00: root bus resource [io  0x0000-0xffff]
+[    0.257309] pci_bus 0000:00: root bus resource [mem 0x40000000-0x7fffffff]
+[    0.257311] pci_bus 0000:00: scanning bus
+[    0.257316] pci 0000:00:01.0: [8086:7111] type 00 class 0x010185
+[    0.257320] pci 0000:00:01.0: reg 0x10: [io  0x0000-0x0007]
+[    0.257324] pci 0000:00:01.0: reg 0x14: [io  0x0000-0x0003]
+[    0.257327] pci 0000:00:01.0: reg 0x18: [io  0x0000-0x0007]
+[    0.257330] pci 0000:00:01.0: reg 0x1c: [io  0x0000-0x0003]
+[    0.257334] pci 0000:00:01.0: reg 0x20: [io  0x0000-0x000f]
+[    0.257338] pci 0000:00:01.0: reg 0x30: [mem 0x00000000-0x000007ff pref]
+[    0.257387] pci_bus 0000:00: fixups for bus
+[    0.257390] pci_bus 0000:00: bus scan returning with max=00
+[    0.257395] pci 0000:00:01.0: fixup irq: got 10
+[    0.257398] pci 0000:00:01.0: assigning IRQ 10
+[    0.257402] pci 0000:00:01.0: BAR 6: assigned [mem 0x40000000-0x400007ff pref]
+[    0.257406] pci 0000:00:01.0: BAR 4: assigned [io  0x1000-0x100f]
+[    0.257409] pci 0000:00:01.0: BAR 0: assigned [io  0x1010-0x1017]
+[    0.257412] pci 0000:00:01.0: BAR 2: assigned [io  0x1018-0x101f]
+[    0.257416] pci 0000:00:01.0: BAR 1: assigned [io  0x1020-0x1023]
+[    0.257419] pci 0000:00:01.0: BAR 3: assigned [io  0x1024-0x1027]
+[    0.258258] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    0.258680] ata_piix 0000:00:01.0: version 2.13
+[    0.258683] ata_piix 0000:00:01.0: enabling device (0000 -> 0001)
+[    0.258696] ata_piix 0000:00:01.0: enabling bus mastering
+[    0.259048] scsi host0: ata_piix
+[    0.259123] scsi host1: ata_piix
+[    0.259174] ata1: PATA max UDMA/33 cmd 0x1010 ctl 0x1020 bmdma 0x1000 irq 10
+[    0.259177] ata2: PATA max UDMA/33 cmd 0x1018 ctl 0x1024 bmdma 0x1008 irq 10
+[    0.259295] e1000: Intel(R) PRO/1000 Network Driver - version 7.3.21-k8-NAPI
+[    0.259297] e1000: Copyright (c) 1999-2006 Intel Corporation.
+[    0.259315] e1000e: Intel(R) PRO/1000 Network Driver - 3.2.6-k
+[    0.259317] e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+[    0.259336] igb: Intel(R) Gigabit Ethernet Network Driver - version 5.3.0-k
+[    0.259338] igb: Copyright (c) 2007-2014 Intel Corporation.
+[    0.259356] ixgbe: Intel(R) 10 Gigabit PCI Express Network Driver - version 4.0.1-k
+[    0.259359] ixgbe: Copyright (c) 1999-2015 Intel Corporation.
+[    0.259378] ixgbevf: Intel(R) 10 Gigabit PCI Express Virtual Function Network Driver - version 2.12.1-k
+[    0.259381] ixgbevf: Copyright (c) 2009 - 2012 Intel Corporation.
+[    0.259399] i40e: Intel(R) Ethernet Connection XL710 Network Driver - version 1.3.9-k
+[    0.259401] i40e: Copyright (c) 2013 - 2014 Intel Corporation.
+[    0.259421] ixgb: Intel(R) PRO/10GbE Network Driver - version 1.0.135-k2-NAPI
+[    0.259424] ixgb: Copyright (c) 1999-2008 Intel Corporation.
+[    0.259442] i40evf: Intel(R) XL710/X710 Virtual Function Network Driver - version 1.3.5
+[    0.259444] Copyright (c) 2013 - 2015 Intel Corporation.
+[    0.259557] usbcore: registered new interface driver usb-storage
+[    0.259835] mousedev: PS/2 mouse device common for all mice
+[    0.260095] usbcore: registered new interface driver usbhid
+[    0.260097] usbhid: USB HID core driver
+[    0.260135] NET: Registered protocol family 17
+[    0.410554] ata1.00: ATA-7: M5 IDE Disk, , max UDMA/66
+[    0.410556] ata1.00: 14679504 sectors, multi 0: LBA 
+[    0.410570] ata1.00: configured for UDMA/33
+[    0.410623] scsi 0:0:0:0: Direct-Access     ATA      M5 IDE Disk      n/a  PQ: 0 ANSI: 5
+[    0.410755] sd 0:0:0:0: [sda] 14679504 512-byte logical blocks: (7.51 GB/6.99 GiB)
+[    0.410785] sd 0:0:0:0: [sda] Write Protect is off
+[    0.410788] sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    0.410789] sd 0:0:0:0: Attached scsi generic sg0 type 0
+[    0.410803] sd 0:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+[    0.410944]  sda: sda1
+[    0.411096] sd 0:0:0:0: [sda] Attached SCSI disk
+[    0.850619] input: AT Raw Set 2 keyboard as /devices/platform/1c060000.kmi/serio0/input/input0
+[    2.750676] input: PS/2 Generic Mouse as /devices/platform/1c070000.kmi/serio1/input/input2
+[    2.750845] EXT2-fs (sda1): warning: mounting unchecked fs, running e2fsck is recommended
+[    2.750858] VFS: Mounted root (ext2 filesystem) on device 8:1.
+[    2.750882] devtmpfs: mounted
+[    2.750905] Freeing unused kernel memory: 228K (ffffffc00078d000 - ffffffc0007c6000)
+[    2.750911] Freeing alternatives memory: 52K (ffffffc0007c6000 - ffffffc0007d3000)
+Mount failed for selinuxfs on /sys/fs/selinux:  No such file or directory
+[    2.792982] random: init urandom read with 18 bits of entropy available
+[    2.805156] init: hwclock main process (624) terminated with status 1
+ * Discovering and coalescing multipaths...       [80G /dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+ * Starting multipath daemon multipathd       [80G [74G[ OK ]
+
+Ubuntu 14.04 LTS aarch64-gem5 ttyAMA0
+
+aarch64-gem5 login:  * Discovering and coalescing multipaths...       [80G /dev/mapper/control: open failed: No such device
+Failure to communicate with kernel device-mapper driver.
+Check that device-mapper is available in the kernel.
+ * Starting multipath daemon multipathd       [80G [74G[ OK ]
